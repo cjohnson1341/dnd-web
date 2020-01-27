@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SkillListComponent } from './skill-list/skill-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { CharacterHeaderComponent } from './character-header/character-header.component';
+import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,10 @@ import { CharacterHeaderComponent } from './character-header/character-header.co
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
