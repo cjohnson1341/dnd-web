@@ -22,13 +22,18 @@
 
             <tr *ngFor="let row of rows">
               <td *ngFor="let column of headers">
-                  {{row[column]}}
               </td>
             </tr>
           
           <div *ngFor="let skill of skills" class="column">
             {{skill.gameEntity.name}}</div>
+          <div *ngFor="let skill of skills" class="column">
+            {{skill.abilityModifier.id}}</div>
+          <div *ngFor="let skill of skills" class="column">
+            {{skill.abilityModifier.gameEntity.name}}</div>
     </table>
+        
+   
       
     </div>
 

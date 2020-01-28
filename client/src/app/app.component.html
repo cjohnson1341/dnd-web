@@ -1,8 +1,8 @@
 <character-header></character-header>
 
-<app-skill-list></app-skill-list>
+<skill-list></skill-list>
 
-<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
     <!-- Position Column -->
     <ng-container matColumnDef="position">
       <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
