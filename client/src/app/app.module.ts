@@ -8,6 +8,7 @@ import { SkillListComponent } from './skill-list/skill-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { CharacterHeaderComponent } from './character-header/character-header.component';
 import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/mate
     MatIconModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
