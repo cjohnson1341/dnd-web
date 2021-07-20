@@ -11,6 +11,8 @@ import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
 
 export class SkillListComponent implements OnInit {
 
+  headers = ["Proficient", "Bonus", "Skill", "Modifier"];
+
   skills: Array<any>;
 
   constructor(private skillService: SkillService) { }
@@ -23,47 +25,3 @@ export class SkillListComponent implements OnInit {
   }
 
 }
-// export class SkillListComponent implements OnInit {
-
-//   headers = ["Proficient", "Bonus", "Skill", "Modifier"];
-
-//   rows = [
-//     {
-//       "Proficient": true,
-//       "Bonus": "-1",
-//       "Skill": "Acrobatics",
-//       "Modifier": "Dexterity"
-//     },
-//     {
-//       "Proficient": false,
-//       "Bonus": "+2",
-//       "Skill": "Animal Handling",
-//       "Modifier": "Wisdom"
-//     },
-//     {
-//       "Proficient": false,
-//       "Bonus": "+2",
-//       "Skill": "Arcana",
-//       "Modifier": "Intelligence"
-//     },
-//     {
-//       "Proficient": false,
-//       "Bonus": "+5",
-//       "Skill": "Athletics",
-//       "Modifier": "Strength"
-//     },
-//     {
-//       "Proficient": false,
-//       "Bonus": "+2",
-//       "Skill": "Deception",
-//       "Modifier": "Wisdom"
-//     },
-//     {
-//       "Proficient": false,
-//       "Bonus": "-1",
-//       "Skill": "History",
-//       "Modifier": "Intelligence"
-//     }
-//   ]
-
-
